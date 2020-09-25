@@ -6,13 +6,6 @@ class Dashboard extends React.Component {
         return(
             <React.Fragment>
             <Container>
-                {/* <ButtonGroup vertical>
-                    <Button>My Dashboard</Button>
-                    <Button>My Favorites</Button>
-                    <Button>My Listings</Button>
-                    <Button>Create Listing</Button>
-                    <Button>My Account</Button>
-                </ButtonGroup> */}
             </Container>
             </React.Fragment>
         )

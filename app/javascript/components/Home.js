@@ -26,7 +26,7 @@ class Home extends React.Component {
                             <Row sm={2} xs={1}>
                                 <Col xs="auto" md={4}>
                                     <CardText className="text-center">
-                                        <h2>All Source Events will help thousands of social events planners’ network with local vendors to change direction and forge a new path.</h2>
+                                        All Source Events will help thousands of social events planners’ network with local vendors to change direction and forge a new path.
                                     </CardText>
                                 </Col>
                                 <Col xs="auto">
@@ -43,7 +43,7 @@ class Home extends React.Component {
                                 </Col>
                                 <Col xs="auto" md={6}>
                                     <CardText className="text-center">
-                                        <h2>The current process of event management is fragmented for social event planners and businesses involved in the event industry who spend their lives trying to bring joy and happiness to others.</h2>
+                                        The current process of event management is fragmented for social event planners and businesses involved in the event industry who spend their lives trying to bring joy and happiness to others.
                                     </CardText>
                                 </Col>
                             </Row>
@@ -54,7 +54,7 @@ class Home extends React.Component {
                             <Row sm={2} xs={1}>
                                 <Col xs="auto" md={4}>
                                     <CardText className="text-center">
-                                        <h2>Our mission is to provide modern social event planners and local businesses involved in the event industry with an all-encompassing platform to quickly and efficiently get things done simultaneously in order to create phenomenal events.  </h2>
+                                        Our mission is to provide modern social event planners and local businesses involved in the event industry with an all-encompassing platform to quickly and efficiently get things done simultaneously in order to create phenomenal events.  
                                     </CardText>
                                 </Col>
                                 <Col xs="auto">

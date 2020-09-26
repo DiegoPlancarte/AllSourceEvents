@@ -22,7 +22,7 @@ class Top extends React.Component {
         return(
             <React.Fragment>
                 {signed_in &&
-                <Navbar className="navbar navbar-expand-md navbar-collapse-xs navbar-dark bg-primary">
+                <Navbar className="navbar navbar-expand-md navbar-collapse-xs navbar-dark bg-primary sticky-nav">
                 <NavbarBrand href="/">
                     <img 
                         id="imageSrc" 

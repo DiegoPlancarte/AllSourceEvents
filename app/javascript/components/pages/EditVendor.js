@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Form, FormGroup, Label, Input, Col, Row, FormFeedback, Button } from 'reactstrap';
 import { Link, Redirect } from 'react-router-dom' 
+import Sidebar from './Sidebar';
 
 export class EditVendor extends Component {
     constructor(props){
@@ -26,8 +27,6 @@ export class EditVendor extends Component {
 
     componentDidMount(){
         this.setForm()
-        console.log(this.state.form)
-        console.log(this.props.vendors)
     }
 
     setForm = () => {
@@ -51,6 +50,10 @@ export class EditVendor extends Component {
     render() {
         return(
             <React.Fragment>
+            <Row>
+                <Col md="2">
+                    <Sidebar/>
+                </Col>
                 <Container sm={6} id="form">
                     
                     <h1 className="text-center" id="header">Edit Vendor!</h1>
@@ -241,6 +244,7 @@ export class EditVendor extends Component {
                         Submit
                     </Link>
                 </Container>
+            </Row>
             </React.Fragment>
         )
     }

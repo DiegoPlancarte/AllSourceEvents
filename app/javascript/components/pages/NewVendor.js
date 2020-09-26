@@ -1,6 +1,7 @@
 import React from 'react'
 import { Redirect } from 'react-router';
 import { Container, Form, FormGroup, Label, Input, Col, Row, FormFeedback, Button } from 'reactstrap';
+import Sidebar from './Sidebar';
 
 class NewVendor extends React.Component{
     constructor(props){
@@ -37,6 +38,11 @@ class NewVendor extends React.Component{
     render() {
         return(
             <React.Fragment>
+                <Row>
+
+                <Col md="2">
+                    <Sidebar/>
+                </Col>
                 <Container sm={6} id="form">
                     
                     <h1 className="text-center" id="header">Add New Vendor!</h1>
@@ -227,6 +233,7 @@ class NewVendor extends React.Component{
                     </Button>
                     {this.state.success && <Redirect to="/allvendors" onClick={this.handleSubmit}/>}
                 </Container>
+                </Row>
             </React.Fragment>
         )
     }

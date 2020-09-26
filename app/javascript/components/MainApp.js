@@ -1,13 +1,11 @@
 import React from "react"
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Row, Col } from 'reactstrap'
 
 import Top from './Top'
 import Home from './Home'
 import Dashboard from './pages/Dashboard'
 import NewVendor from './pages/NewVendor'
-import Sidebar from "./pages/Sidebar"
 import AllVendors from "./pages/AllVendors"
 import VendorInfo from "./pages/VendorInfo"
 import EditVendor from "./pages/EditVendor"
@@ -90,10 +88,6 @@ class MainApp extends React.Component {
         <React.Fragment>
 
           <Top signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/>
-          <Row>
-          <Col md="2">
-            <Sidebar/>
-          </Col>
 
           <Switch>
           <Route exact path="/" render={(props) => <Home signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/> } />
@@ -103,8 +97,6 @@ class MainApp extends React.Component {
           <Route exact path="/allvendors" render={(props) => <AllVendors {...props} vendors={ this.state.vendors } /> } />
           <Route exact path="/edit/:id" render={(props) => <EditVendor {...props} onEdit={this.editVendor} current_user={current_user} vendors={this.state.vendors}/>}/>
           </Switch>
-
-          </Row>
 
         </React.Fragment>
 			</Router>

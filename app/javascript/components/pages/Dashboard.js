@@ -1,12 +1,16 @@
 import React from 'react'
-import { ButtonGroup, Button, Container } from 'reactstrap'
+import { ButtonGroup, Button, Container, Col, Row } from 'reactstrap'
+import Sidebar from './Sidebar'
 
 class Dashboard extends React.Component {
     render() {
         return(
             <React.Fragment>
-            <Container>
-            </Container>
+            <Row>
+                <Col md="2">
+                    <Sidebar/>
+                </Col>
+            </Row>
             </React.Fragment>
         )
     }

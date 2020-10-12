@@ -14,7 +14,7 @@ class Home extends React.Component {
         const { sign_in_route, signed_in, sign_out_route, new_user_registration_path} = this.props
         return (
             <React.Fragment>
-                <Jumbotron>
+                <Jumbotron className="">
                     <h1>Welcome to All Source Events!</h1>
                     <hr className="my-2"/>
                     <p>All Source Events is a simple, yet powerful platform, for the modern social and party event planner… AND local businesses, who already are, or want to be involved, in events! </p>

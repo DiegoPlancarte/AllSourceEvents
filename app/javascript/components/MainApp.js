@@ -7,6 +7,7 @@ import Home from './Home'
 import Dashboard from './pages/Dashboard'
 import NewVendor from './pages/NewVendor'
 import AllVendors from "./pages/AllVendors"
+import MyVendors from "./pages/MyVendors"
 import VendorInfo from "./pages/VendorInfo"
 import EditVendor from "./pages/EditVendor"
 
@@ -90,12 +91,13 @@ class MainApp extends React.Component {
           <Top signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/>
 
           <Switch>
-          <Route exact path="/" render={(props) => <Home signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/> } />
-          <Route exact path="/dashboard" component={ Dashboard } />
-          <Route exact path="/newvendor" render={(props) => <NewVendor onSubmit={ this.createVendor } current_user={ current_user} /> } />
-          <Route exact path="/vendorinfo/:id" render={(props) => <VendorInfo {...props} signed_in={ signed_in } current_user={ current_user} onDelete={this.deleteVendor} /> } />
-          <Route exact path="/allvendors" render={(props) => <AllVendors {...props} vendors={ this.state.vendors } /> } />
-          <Route exact path="/edit/:id" render={(props) => <EditVendor {...props} onEdit={this.editVendor} current_user={current_user} vendors={this.state.vendors}/>}/>
+            <Route exact path="/" render={(props) => <Home signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/> } />
+            <Route exact path="/dashboard" component={ Dashboard } />
+            <Route exact path="/newvendor" render={(props) => <NewVendor onSubmit={ this.createVendor } current_user={ current_user} /> } />
+            <Route exact path="/vendorinfo/:id" render={(props) => <VendorInfo {...props} signed_in={ signed_in } current_user={ current_user} onDelete={this.deleteVendor} /> } />
+            <Route exact path="/allvendors" render={(props) => <AllVendors {...props} vendors={ this.state.vendors } /> } />
+            <Route exact path="/myvendors" render={(props) => <MyVendors {...props} vendors={ this.state.vendors } current_user={ current_user } /> } />
+            <Route exact path="/edit/:id" render={(props) => <EditVendor {...props} onEdit={this.editVendor} current_user={current_user} vendors={this.state.vendors}/>}/>
           </Switch>
 
         </React.Fragment>

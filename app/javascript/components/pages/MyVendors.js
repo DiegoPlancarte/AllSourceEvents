@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardImg, CardFooter, Button } from 'reactstrap'
+import { Container, Row, Col, Card, CardBody, CardText, CardImg, CardTitle, CardFooter, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import Sidebar from './Sidebar'
 
-class AllVendors extends Component {
+export class MyVendors extends Component {
   render() {
-    const { vendors } = this.props
+    const { vendors, current_user } = this.props
+
+    const vendor = vendors.filter((v,i)=> {
+      return(v.user_id === current_user.id)
+    })
+
     const bakery = require('../../../assets/images/bakery')
     const catering = require('../../../assets/images/catering')
     const eventplanner = require('../../../assets/images/eventplanner')
@@ -16,7 +21,7 @@ class AllVendors extends Component {
         <Row>
           <Container>
             <Row xs={1} md={2} lg={3} >
-              {vendors.map((v,i)=> {
+              {vendor.map((v,i)=> {
                   let imageName = () => {
                     if (v.category === 'Baker') {
                       return `${bakery}`
@@ -36,7 +41,7 @@ class AllVendors extends Component {
                         <CardBody>
                           <CardTitle><strong>{v.name}</strong></CardTitle>
                           <CardText>{v.category}</CardText>
-                          <Link to={`/vendorinfo/${v.id}`} >
+                          <Link to={`/vendorinfo/${v.id}`}>
                             <Button className="text-white">Details</Button>
                           </Link>
                         </CardBody>
@@ -52,4 +57,4 @@ class AllVendors extends Component {
   }
 }
 
-export default AllVendors;
+export default MyVendors

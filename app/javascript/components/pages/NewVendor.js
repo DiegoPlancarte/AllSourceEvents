@@ -1,7 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router';
 import { Container, Form, FormGroup, Label, Input, Col, Row, FormFeedback, Button } from 'reactstrap';
-import Sidebar from './Sidebar';
 
 class NewVendor extends React.Component{
   constructor(props){
@@ -72,7 +71,6 @@ render() {
                   <option value="Catering">Catering</option>
                   <option value="Venue">Venue</option>
                   <option value="Florist">Florist</option>
-                  <option value="Event Planner">Event Planner</option>
                   <option value="Baker">Baker</option>
               </Input>
             </FormGroup>

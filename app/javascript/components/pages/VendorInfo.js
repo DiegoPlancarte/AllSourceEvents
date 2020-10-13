@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { CardDeck, Row, Col, Card, CardImg, CardText, CardBody, Container } from 'reactstrap';
 import { Link } from "react-router-dom"
-import Sidebar from './Sidebar';
 
 export class VendorInfo extends Component {
   constructor(props){

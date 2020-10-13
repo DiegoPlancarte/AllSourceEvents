@@ -92,7 +92,7 @@ class MainApp extends React.Component {
 
           <Switch>
             <Route exact path="/" render={(props) => <Home signed_in={ signed_in } sign_in_route={ sign_in_route } sign_out_route={ sign_out_route } new_user_registration_path={ new_user_registration_path }/> } />
-            <Route exact path="/dashboard" component={ Dashboard } />
+            <Route exact path="/dashboard" render={(props) => <Dashboard {...props} vendors={ this.state.vendors } current_user={ current_user } /> } />
             <Route exact path="/newvendor" render={(props) => <NewVendor onSubmit={ this.createVendor } current_user={ current_user} /> } />
             <Route exact path="/vendorinfo/:id" render={(props) => <VendorInfo {...props} signed_in={ signed_in } current_user={ current_user} onDelete={this.deleteVendor} /> } />
             <Route exact path="/allvendors" render={(props) => <AllVendors {...props} vendors={ this.state.vendors } /> } />

@@ -19,7 +19,7 @@ export class MyVendors extends Component {
       <React.Fragment>
         <Row>
           <Container>
-            <Row xs={1} md={2} lg={3} >
+            <Row md="1" lg="2" xl="3">
               {vendor.map((v,i)=> {
                   let imageName = () => {
                     if (v.category === 'Baker') {

@@ -23,11 +23,11 @@ class Home extends React.Component {
                 <Container xs={4} className="themed-container">
                     <CardDeck style={{display: 'flex', flexDirection: 'column'}} >
                         <Card  style={{border: 'none'}}>
-                            <Row sm={2} xs={1}>
-                                <Col xs="auto" md={4}>
-                                    <CardText className="text-center">
+                            <Row md={1} lg={2}>
+                                <Col md="auto" lg={6}>
+                                    <h2 className="text-center">
                                         All Source Events will help thousands of social events planners’ network with local vendors to change direction and forge a new path.
-                                    </CardText>
+                                    </h2>
                                 </Col>
                                 <Col xs="auto">
                                         <CardImg src={ Vendor } className="img-fluid shadow p-1 mb-1 rounded" alt="creating a new trip" />
@@ -37,25 +37,25 @@ class Home extends React.Component {
                         <br />
                         <br />
                         <Card style={{border: 'none'}} >
-                            <Row sm={2} xs={1}>
+                            <Row md={1} lg={2}>
                                 <Col xs="auto">
                                     <CardImg src={ App } className="img-fluid shadow p-3 mb-5 bg-white rounded" alt="viewing upcoming trips"/>
                                 </Col>
-                                <Col xs="auto" md={6}>
-                                    <CardText className="text-center">
+                                <Col md="auto" lg={6}>
+                                    <h2 className="text-center">
                                         The current process of event management is fragmented for social event planners and businesses involved in the event industry who spend their lives trying to bring joy and happiness to others.
-                                    </CardText>
+                                    </h2>
                                 </Col>
                             </Row>
                         </Card>
                         <br />
                         <br />
                         <Card style={{border: 'none'}} >
-                            <Row sm={2} xs={1}>
-                                <Col xs="auto" md={4}>
-                                    <CardText className="text-center">
+                            <Row md={1} lg={2}>
+                                <Col md="auto" lg={6}>
+                                    <h2 className="text-center">
                                         Our mission is to provide modern social event planners and local businesses involved in the event industry with an all-encompassing platform to quickly and efficiently get things done simultaneously in order to create phenomenal events.  
-                                    </CardText>
+                                    </h2>
                                 </Col>
                                 <Col xs="auto">
                                     <CardImg src={ Event } className="img-fluid shadow p-3 mb-5 bg-white rounded" alt="sharing trip with email"/>

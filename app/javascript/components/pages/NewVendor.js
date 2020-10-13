@@ -43,8 +43,8 @@ render() {
         <h1 className="text-center" id="header">Add New Vendor!</h1>
 
       <Form>
-        <Row>
-          <Col md="9">
+        <Row xs="1" lg="2">
+          <Col xs="12" lg="9">
             <FormGroup>
               <Label for="name">Name of Vendor</Label>
               <Input
@@ -57,7 +57,7 @@ render() {
               />
             </FormGroup>
           </Col>
-          <Col md="3">
+          <Col xs="12" lg="3">
             <FormGroup>
               <Label for="category">Type of Vendor</Label>
               <Input
@@ -76,8 +76,8 @@ render() {
             </FormGroup>
           </Col>
         </Row>
-        <Row>
-            <Col md="5">
+        <Row xs="2" lg="4">
+            <Col xs="8" lg="5">
               <FormGroup>
                 <Label for="address">Street Address</Label>
                 <Input
@@ -90,7 +90,7 @@ render() {
                 />
               </FormGroup>
             </Col>
-            <Col md="3">
+            <Col xs="4" lg="3">
               <FormGroup>
                 <Label for="city">City</Label>
                 <Input
@@ -103,7 +103,7 @@ render() {
                 />
               </FormGroup>
             </Col>
-            <Col md="2">
+            <Col xs="6" lg="2">
               <FormGroup>
                 <Label for="state">State</Label>
                 <Input
@@ -168,7 +168,7 @@ render() {
                 </Input>
               </FormGroup>
             </Col>
-          <Col md="2">
+          <Col xs="6" lg="2">
             <FormGroup>
               <Label for="zip">Zip Code</Label>
               <Input
@@ -182,8 +182,8 @@ render() {
             </FormGroup>
           </Col>
         </Row>
-        <Row>
-          <Col md="6">
+        <Row xs="2" lg="1">
+          <Col xs="12" lg="6">
             <FormGroup>
               <Label for="phone">Phone Number</Label>
               <Input
@@ -196,7 +196,7 @@ render() {
               />
             </FormGroup>
           </Col>
-          <Col md="6">
+          <Col xs="12" lg="6">
           <FormGroup>
             <Label for="email">Email Address</Label>
             <Input

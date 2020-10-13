@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Form, FormGroup, Label, Input, Col, Row, FormFeedback, Button } from 'reactstrap';
 import { Link, Redirect } from 'react-router-dom' 
-import Sidebar from './Sidebar';
 
 export class EditVendor extends Component {
   constructor(props){
@@ -81,7 +80,6 @@ export class EditVendor extends Component {
                         <option value="Catering">Catering</option>
                         <option value="Venue">Venue</option>
                         <option value="Florist">Florist</option>
-                        <option value="Event Planner">Event Planner</option>
                         <option value="Baker">Baker</option>
                     </Input>
                   </FormGroup>

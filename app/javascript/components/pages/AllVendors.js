@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle, CardImg, CardFooter, Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar'
 
 class AllVendors extends Component {
   render() {

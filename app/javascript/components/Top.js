@@ -23,7 +23,7 @@ class Top extends React.Component {
     return(
       <React.Fragment>
         {signed_in &&
-          <Navbar className="navbar navbar-expand-lg navbar-collapse-md navbar-dark bg-primary sticky-nav mb-4">
+          <Navbar className="navbar navbar-expand-lg navbar-collapse-md navbar-dark bg-primary sticky-nav mb-4 mr-0">
             <NavbarBrand href="/">
               <img 
                 id="imageSrc" 
@@ -58,7 +58,7 @@ class Top extends React.Component {
           </Navbar>
         }
         {!signed_in &&
-          <Navbar className="navbar navbar-expand-lg navbar-collapse-md navbar-dark bg-primary mb-4">
+          <Navbar className="navbar navbar-expand-lg navbar-collapse-md navbar-dark bg-primary mb-4 mr-0">
             <NavbarBrand href="/">
               <img 
                 id="imageSrc" 

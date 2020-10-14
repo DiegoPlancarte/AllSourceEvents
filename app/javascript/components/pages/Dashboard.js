@@ -19,9 +19,10 @@ class Dashboard extends React.Component {
 
     return(
       <React.Fragment>
-        <Row>
           <Container>
-          <h1 className="text-primary" id="header">My Listings</h1>
+          <h1 className="text-primary" id="header">My Dashboard</h1>
+          <hr/>
+          <h2 className="text-secondary" id="header">My Vendors</h2>
             <Row md="1" lg="2" xl="3">
               {vendor.map((v,i)=> {
                   let imageName = () => {
@@ -53,7 +54,6 @@ class Dashboard extends React.Component {
             )})}
             </Row>
           </Container>
-        </Row>
       </React.Fragment>
     )
   }

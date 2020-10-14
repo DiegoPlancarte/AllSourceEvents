@@ -48,7 +48,6 @@ export class EditVendor extends Component {
   render() {
     return(
       <React.Fragment>
-        <Row>
           <Container sm={6} id="form">
             <h1 className="text-center" id="header">Edit Vendor!</h1>
             <Form>
@@ -236,7 +235,6 @@ export class EditVendor extends Component {
                 Submit
               </Link>
           </Container>
-        </Row>
       </React.Fragment>
       )
     }

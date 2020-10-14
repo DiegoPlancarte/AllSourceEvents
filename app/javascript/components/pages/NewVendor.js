@@ -37,11 +37,9 @@ handleSubmit = (vendors) => {
 render() {
   return(
     <React.Fragment>
-      <Row>
       <Container sm={6} id="form">
-        
-        <h1 className="text-center" id="header">Add New Vendor!</h1>
-
+        <h1 className="text-primary" id="header">Add New Vendor!</h1>
+        <hr/>
       <Form>
         <Row xs="1" lg="2">
           <Col xs="12" lg="9">
@@ -227,7 +225,6 @@ render() {
           </Button>
           {this.state.success && <Redirect to="/allvendors" onClick={this.handleSubmit}/>}
         </Container>
-        </Row>
     </React.Fragment>
     )
   }

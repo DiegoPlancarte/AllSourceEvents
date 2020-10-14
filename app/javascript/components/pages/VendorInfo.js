@@ -47,31 +47,33 @@ export class VendorInfo extends Component {
     return (
       <React.Fragment>
           <Container>
+            <h1 className="text-primary" id="header">Vendor Details</h1>
+            <hr/>
             { vendor && 
               <CardDeck>
                 <Card border="light" className="shadow">
-                <Row>
-                  <Col>
-                    <CardImg className="img-fluid" src={imageName()}/>
-                  </Col>
-                  <Col>
-                    <CardBody>
-                      <CardText className="text-center"> {vendor.name} </CardText>
-                      <CardText className="text-center"> {vendor.category}</CardText>
-                      <CardText className="text-center"> {vendor.city}, {vendor.state.toUpperCase()} {vendor.zip}</CardText>
-                      <CardText className="text-center"> <em>Phone:</em> {vendor.phone}</CardText>
-                      <CardText className="text-center"> <em>Email:</em> {vendor.email} </CardText>
-                      <CardText className="text-center"> <em>Description:</em> {vendor.description} </CardText>
-                      {signed_in && (current_user.id === vendor.user_id) && 
-                        <div className="text-center">
-                        <Link to="/allvendors" className= "btn btn-danger" onClick={this.handleDelete} >Delete Listing</Link>
-                        &nbsp;
-                        <Link to={`/edit/${vendor.id}`} className= "btn btn-info">Edit Listing</Link>
-                        </div>
-                      }
-                    </CardBody>
-                  </Col>
-                </Row>
+                  <Row md={1} lg={2}>
+                    <Col>
+                      <CardImg className="img-fluid" src={imageName()}/>
+                    </Col>
+                    <Col>
+                      <CardBody>
+                        <CardText className="text-center"> {vendor.name} </CardText>
+                        <CardText className="text-center"> {vendor.category}</CardText>
+                        <CardText className="text-center"> {vendor.city}, {vendor.state.toUpperCase()} {vendor.zip}</CardText>
+                        <CardText className="text-center"> <em>Phone:</em> {vendor.phone}</CardText>
+                        <CardText className="text-center"> <em>Email:</em> {vendor.email} </CardText>
+                        <CardText className="text-center"> <em>Description:</em> {vendor.description} </CardText>
+                        {signed_in && (current_user.id === vendor.user_id) && 
+                          <div className="text-center">
+                          <Link to="/allvendors" className= "btn btn-danger" onClick={this.handleDelete} >Delete Listing</Link>
+                          &nbsp;
+                          <Link to={`/edit/${vendor.id}`} className= "btn btn-info">Edit Listing</Link>
+                          </div>
+                        }
+                      </CardBody>
+                    </Col>
+                  </Row>
                 </Card>
               </CardDeck>
             }
